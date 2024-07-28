@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Smoothie Logo" id="logo">
+        <h1>Order Your Smoothie</h1>
+    </header>
+    <form id="smoothie-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="base">Choose a base:</label>
+        <select id="base" name="base" required>
+            <option value="milk">Milk</option>
+            <option value="almond-milk">Almond Milk</option>
+            <option value="soy-milk">Soy Milk</option>
+            <option value="water">Water</option>
+        </select>
+        <br>
+
+        <label>Choose your fruits:</label>
+        <br>
+        <input type="checkbox" id="banana" name="fruits" value="Banana">
+        <label for="banana">Banana</label>
+        <br>
+        <input type="checkbox" id="strawberry" name="fruits" value="Strawberry">
+        <label for="strawberry">Strawberry</label>
+        <br>
+        <input type="checkbox" id="blueberry" name="fruits" value="Blueberry">
+        <label for="blueberry">Blueberry</label>
+        <br>
+        <input type="checkbox" id="mango" name="fruits" value="Mango">
+        <label for="mango">Mango</label>
+        <br>
+
+        <label for="size">Choose a size:</label>
+        <select id="size" name="size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <br>
+
+        <button type="button" id="order-button">Order</button>
+    </form>
+
+    <div id="order-summary" class="hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>
